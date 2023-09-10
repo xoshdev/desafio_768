@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @documentaryfilm %>
+
+<div>
+  <%= link_to "Edit this documentaryfilm", edit_documentaryfilm_path(@documentaryfilm) %> |
+  <%= link_to "Back to documentaryfilms", documentaryfilms_path %>
+
+  <%= button_to "Destroy this documentaryfilm", @documentaryfilm, method: :delete %>
+</div>

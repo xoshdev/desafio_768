@@ -1,0 +1,30 @@
+<nav id="menutop" class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "logo.png", alt: "LOGO", class: "logo-image" %>
+  <% end %>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              
+              <li class="nav-item">
+                <%= link_to 'Home', root_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+              <%= link_to 'Series', series_index_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+              <%= link_to 'Peliculas', movies_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+              <%= link_to 'Documentales', documentaryfilms_path, class: 'nav-link' %>
+                  </li>
+          </ul>
+      </div>
+  </div>
+</nav>

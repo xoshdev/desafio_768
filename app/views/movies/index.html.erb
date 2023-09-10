@@ -1,0 +1,26 @@
+<h1>Peliculas</h1>
+<div  class= "new">
+<%= link_to "Ingresar Película", new_movie_path, class: 'btn btn-primary' %>
+</div>
+
+<div id="movies-container" class="container">
+
+<div id="movies">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Synopsis</th>
+      <th scope="col">Director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+        <%= render movie %>
+      <% end %>
+    
+  </tbody>
+</table>
+
+</div>

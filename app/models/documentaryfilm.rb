@@ -1,0 +1,2 @@
+class Documentaryfilm < ApplicationRecord
+end

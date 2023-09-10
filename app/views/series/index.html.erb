@@ -1,0 +1,26 @@
+<h1>Series</h1>
+<div  class= "new">
+<%= link_to "Ingresar Serie", new_series_path, class: 'btn btn-primary' %>
+</div>
+
+<div id="movie-container" class="container">
+
+<div id="series">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Synopsis</th>
+      <th scope="col">Director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @series.each do |serie| %>
+        <%= render serie %>
+      <% end %>
+    
+  </tbody>
+</table>
+
+</div>

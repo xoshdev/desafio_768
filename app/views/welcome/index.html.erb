@@ -1,0 +1,45 @@
+<section>
+  <div class="container">
+    <h1 class="recetas-titulo">WOW CINE</h1>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card">
+          <%= image_tag "series", alt: "SERIES", width: '180', height: '250', class: 'card-img-top' %>
+          <div class="card-body">
+            <h5 class="card-title" id="series">SERIES</h5>
+            <p class="card-text" id="card-texto">¡Sumérgete en el mundo de las series! donde la emoción nunca termina.</p>
+            <%= link_to series_index_path, class: "btn btn-primary" do %>
+              Ver Cartelera
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card">
+          <%= image_tag "peliculas", alt: "PELICULAS", width: '180', height: '250', class: 'card-img-top' %>
+          <div class="card-body">
+            <h5 class="card-title" id="tiramisu">PELICULAS</h5>
+            <p class="card-text" id="card-texto">¡La magia del cine te envuelve aquí! Cada película es una aventura inolvidable.</p>
+            <%= link_to movies_path, class: "btn btn-primary" do %>
+              Ver Cartelera
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card">
+          <%= image_tag "documentales", alt: "DOCUMENTALES", width: '180', height: '250', class: 'card-img-top' %>
+          <div class="card-body">
+            <h5 class="card-title" id="documentales">DOCUMENTALES</h5>
+            <p class="card-text" id="card-texto">Descubre la realidad en su máxima expresión, aprendiendo con las historias del mundo real.</p>
+            <%= link_to documentaryfilms_path, class: "btn btn-primary" do %>
+              Ver Cartelera
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

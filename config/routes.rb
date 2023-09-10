@@ -1,0 +1,9 @@
+Rails.application.routes.draw do
+  resources :documentaryfilms
+  resources :series, as: 'series'
+  resources :movies
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  # Defines the root path route ("/")
+  root 'welcome#index'
+end

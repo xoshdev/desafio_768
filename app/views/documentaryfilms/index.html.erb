@@ -1,0 +1,26 @@
+<h1>Documentales</h1>
+<div  class= "new">
+<%= link_to "Ingresar Documental", new_documentaryfilm_path, class: 'btn btn-primary' %>
+</div>
+
+<div id="movies-container" class="container">
+
+<div id="documentaryfilm">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Synopsis</th>
+      <th scope="col">Director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @documentaryfilms.each do |documentaryfilm| %>
+        <%= render documentaryfilm %>
+      <% end %>
+    
+  </tbody>
+</table>
+
+</div>
