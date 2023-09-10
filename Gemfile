@@ -71,6 +71,8 @@ group :test do
   gem "webdrivers"
 end
 
+gem 'faker'
+
 gem "bootstrap", "~> 5.3"
 
 gem "jquery-rails", "~> 4.6"
